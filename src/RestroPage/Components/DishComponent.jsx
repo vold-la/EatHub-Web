@@ -38,7 +38,7 @@ const Wrapper = styled.div`
     }
 
     div:nth-last-child(2) {
-      background-color: rgb(247, 235, 236);
+      background-color: rgb(240, 236, 236);
       :hover {
         background-color: #f7d7da;
       }
@@ -98,14 +98,11 @@ function DishComponent(props) {
                     (_, i) =>
                       i < 5 && (
                         <AssistantIcon
-                          style={{ color: "rgb(255,216,0)" }}
+                          style={{ color: "rgb(0,0,0)" }}
                           key={i}
                         />
                       )
                   )}
-                {/* <AssistantIcon
-                                    style={{ color: "rgb(255,216,0)" }}
-                                  />{" "} */}
                 <p>{dish && dish.votes} Votes</p>
               </div>
               <p>₹{dish && dish.cost}</p>
@@ -116,7 +113,7 @@ function DishComponent(props) {
               <div>
                 <div className="bd-highlight mb-3 customizeButton">
                   <div
-                    style={{ color: "red" }}
+                    style={{ color: "black" }}
                     className="bd-highlight"
                     onClick={() => {
                       setDishCount((prev) => prev - 1);
@@ -132,7 +129,7 @@ function DishComponent(props) {
                   </div>
                   <div className="bd-highlight">{dishCount}</div>
                   <div
-                    style={{ color: "red" }}
+                    style={{ color: "black" }}
                     className="bd-highlight"
                     onClick={() => {
                       setDishCount((prev) => prev + 1);
@@ -159,7 +156,7 @@ function DishComponent(props) {
                   dispatch(addItemToCart(dish, 1));
                 }}
               >
-                Add <span style={{ color: "red", fontWeight: "500" }}>+</span>
+                Add <span style={{ color: "black", fontWeight: "500" }}>+</span>
               </button>
             )}
           </div>

@@ -73,7 +73,7 @@ const Wrapper = styled.div`
     padding: 0.5rem 0.8rem;
     border-radius: 6px;
     white-space: nowrap;
-    color: rgb(237, 90, 107);
+    color: rgb(0,0,0);
     button {
       border: none;
       background-color: inherit;
@@ -83,7 +83,7 @@ const Wrapper = styled.div`
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 500;
-    color: rgb(237, 90, 107);
+    color: rgb(0,0,0);
   }
   .text {
     text-decoration: none;
@@ -91,7 +91,7 @@ const Wrapper = styled.div`
     font-weight: 500;
     font-family: Poppins;
     font-weight: 200;
-    color: rgb(138, 131, 131);
+    color: rgb(131, 131, 131);
   }
 `;
 

@@ -6,6 +6,6 @@ export const Wrapper = styled.div`
     -webkit-box-pack: center;
     justify-content: center;
     width: 100%;
-    background-color: rgb(255, 251, 247);
+    background-color: rgb(251, 251, 251);
   }
 `;

@@ -94,7 +94,6 @@ function ItemImage(props) {
                     <div src="" className="img-div7"></div>
                     <img
                       alt="card3"
-                      // src="https://b.zmtcdn.com/data/pictures/9/19088819/32b0ae465a233bd09cbaaf36ab1b98c7.jpeg?output-format=webp&amp;fit=around|300:273&amp;crop=300:273;*,*"
                       src={data && data.photos && data.photos[1]}
                       loading="lazy"
                       className="img-2"
@@ -106,7 +105,6 @@ function ItemImage(props) {
                     <div src="" className="img-div10"></div>
                     <img
                       alt="card1"
-                      // src="https://b.zmtcdn.com/data/pictures/9/19088819/b49dde85e8fdc01f268f390f7eebb020.jpeg?output-format=webp&amp;fit=around|300:273&amp;crop=300:273;*,*"
                       src={data && data.photos && data.photos[2]}
                       loading="lazy"
                       className="img-3"
@@ -120,7 +118,6 @@ function ItemImage(props) {
                     <div src="" className="img-div7"></div>
                     <img
                       alt="card3"
-                      // src="https://b.zmtcdn.com/data/pictures/9/19088819/32b0ae465a233bd09cbaaf36ab1b98c7.jpeg?output-format=webp&amp;fit=around|300:273&amp;crop=300:273;*,*"
                       src={data && data.photos && data.photos[3]}
                       loading="lazy"
                       className="img-2"
@@ -132,7 +129,6 @@ function ItemImage(props) {
                     <div src="" className="img-div10"></div>
                     <img
                       alt="card1"
-                      // src="https://b.zmtcdn.com/data/pictures/9/19088819/b49dde85e8fdc01f268f390f7eebb020.jpeg?output-format=webp&amp;fit=around|300:273&amp;crop=300:273;*,*"
                       src={data && data.photos && data.photos[4]}
                       loading="lazy"
                       className="img-3"

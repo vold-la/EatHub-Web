@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
     font-weight: 200;
   }
   .bg-color {
-    background: rgb(252, 252, 252);
+    background: rgb(255, 255, 255);
   }
   .landingFooter-heading {
     margin: 0px 0px 3rem;
@@ -17,7 +17,7 @@ export const Wrapper = styled.div`
   }
   .landingFooter-tag {
     margin: 0px 0px 1.6rem;
-    color: rgb(54, 54, 54);
+    color: rgb(55, 55, 55);
     font-size: 1.7rem;
     line-height: 3.2rem;
     font-weight: 500;
@@ -94,7 +94,7 @@ export const Wrapper = styled.div`
   }
   .footer-Link {
     text-decoration: none;
-    color: rgb(77, 74, 74);
+    color: rgb(74, 74, 74);
     font-size: 0.9rem;
     margin: 3.8px;
   }

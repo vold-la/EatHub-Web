@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
     font-weight: 400;
     font-size: 2.2rem;
     line-height: 1.2;
-    color: rgb(28, 28, 28);
+    color: #1c1c1c;
     margin-top: 15px;
   }
   .text-div {
@@ -19,7 +19,7 @@ export const Wrapper = styled.div`
   .text {
     line-height: 1.4;
     font-weight: 300;
-    color: rgb(54, 54, 54);
+    color: #1c1c1c;
     font-size: 1.1rem;
     margin: 0px;
   }
@@ -28,10 +28,10 @@ export const Wrapper = styled.div`
     display: block;
     background-color: transparent;
     font-weight: 300;
-    color: rgb(245, 112, 130);
+    color: #cae6d5;
   }
   .link-text {
-    color: rgb(236, 70, 84);
+    color: #cae6d5;
     display: inline-flex;
     padding: 0.3rem;
     background-color: transparent;

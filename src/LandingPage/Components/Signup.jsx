@@ -13,7 +13,7 @@ import Checkbox from "@material-ui/core/Checkbox";
 import Divider from "@material-ui/core/Divider";
 import Alert from "@material-ui/lab/Alert";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
-import InputBox from "./InputBox";
+import InputBox from "../../Extras/OtpBox/InputBox";
 import { GoogleLogin } from "react-google-login";
 import axios from "axios";
 
@@ -22,7 +22,7 @@ const ResetButton = styled.button`
   outline: none;
   background-color: inherit;
   ${(props) =>
-    props.disabled === true ? `color: grey` : `color: rgb(237, 90, 107)`}
+    props.disabled === true ? `color: grey` : `color: rgb(0,0,0)`}
 `;
 
 const OTPTimerWrapper = styled.div`
@@ -42,7 +42,7 @@ const ButtonWrapper = styled.button`
   ${(props) =>
     props.disabled === true
       ? `background-color: rgb(156,156,156); opacity: 0.5;  border: rgb(156,156,156);`
-      : `background-color: rgb(237, 90, 107); border: rgb(237, 90, 107);`}
+      : `background-color: rgb(0,0,0); border: rgb(0,0,0);`}
   color: white;
 `;
 
@@ -84,7 +84,7 @@ const LinkWrapper = styled.div`
   button {
     border: none;
     background-color: inherit;
-    color: rgb(237, 90, 107);
+    color: rgb(0,0,0);
     margin: 0px 5px;
   }
 `;
@@ -119,12 +119,13 @@ const useStyles = makeStyles((theme) => ({
   },
   signupNotice: {
     display: "flex",
-    alignItems: "start",
+      alignItems: "start",
+      color: "rgb(105, 105, 105)",
     "& div": {
       padding: "5px 0px 0px 0px",
       fontSize: "14px",
       "& span": {
-        color: "rgb(237, 90, 107)",
+        color: "rgb(0,0,0)",
         fontWeight: "500",
       },
     },
@@ -192,7 +193,7 @@ function LoginPage(props) {
         }, 2000);
       } else if (result.error === true) {
         setUserSignupError(true);
-        setUserSignupErrorMessage("Was not able to sign you up.");
+        setUserSignupErrorMessage("Unable to sign you up.");
         setTimeout(() => {
           setUserSignupError(false);
           setUserSignupErrorMessage("");
@@ -308,7 +309,7 @@ function LoginPage(props) {
               >
                 <div className={classes.otpDescription}>
                   One Time Password has been sent to your email, {email}, please
-                  enter the same here to login. Valid for 10 minutes.
+                  enter. Valid for 10 minutes.
                 </div>
               </div>
               <InputBox length={5} onChange={verifyOtp} />
@@ -397,7 +398,7 @@ function LoginPage(props) {
                 className={classes.inputFields}
               />
               <div className={classes.signupNotice}>
-                <Checkbox onChange={(e) => setAcceptNotice(e.target.checked)} />
+              <Checkbox style={{ color: '#000000' }} onChange={(e) => setAcceptNotice(e.target.checked)} />
                 <div>
                   I agree to EatHub's <span>Terms of Service</span>,
                   <span>Privacy Policy</span> and <span>Content Policies</span>

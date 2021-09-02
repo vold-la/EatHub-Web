@@ -5,7 +5,6 @@ import TwitterIcon from "@material-ui/icons/Twitter";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Popover from "react-bootstrap/Popover";
-import LanguageIcon from "@material-ui/icons/Language";
 import { Wrapper } from "../Style/MainFooterStyle";
 
 function MainFooter() {
@@ -46,7 +45,7 @@ function MainFooter() {
                                       overlay={
                                           <Popover style={{ height: "150px", width: "500px" }}>
                                               <Popover.Content>
-                                                  <p> Our technology platform connects customers, restaurant partners and delivery partners, serving their multiple needs </p>
+                                                  <p> On a way to make things at production level .</p>
                                               </Popover.Content>
                                           </Popover>
                                       }
@@ -64,7 +63,7 @@ function MainFooter() {
                                       overlay={
                                           <Popover style={{ height: "150px", width: "500px" }}>
                                               <Popover.Content>
-                                                  <p> Our technology platform connects customers, restaurant partners and delivery partners, serving their multiple needs </p>
+                                                  <p> Blog Coming Soon explaining different pieces of this project :) </p>
                                               </Popover.Content>
                                           </Popover>
                                       }

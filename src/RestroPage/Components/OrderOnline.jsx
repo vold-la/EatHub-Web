@@ -20,6 +20,8 @@ import CloseIcon from "@material-ui/icons/Close";
 import Backdrop from "@material-ui/core/Backdrop";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import Button from "@material-ui/core/Button";
+import Box from "@material-ui/core/Box";
+
 
 const CartWrapper = styled.div`
   position: fixed;
@@ -159,6 +161,18 @@ const useStyles = makeStyles((theme) => ({
       },
     },
   },
+searchBox: {
+        display: "flex",
+        width: "90%",
+    },
+    searchInput: {
+        width: '90%',
+        marginLeft: '10px',
+        border: 'none',
+        outline: 'none',
+    },
+
+
 }));
 
 function OrderOnline(props) {
@@ -167,6 +181,7 @@ function OrderOnline(props) {
   const location = useLocation();
   const history = useHistory();
   const [expanded, setExpanded] = useState(false);
+  const [searchFood, setSearchFood] = useState('');
   const cartValue = useSelector((state) => state.restaurantReducer.cartValue);
   const reduxCart = useSelector((state) => state.restaurantReducer.cart);
   const dispatch = useDispatch();
@@ -174,6 +189,11 @@ function OrderOnline(props) {
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
+
+const handleSearchFood = e => {
+        setSearchFood(e.target.value);
+    };
+
 
   return (
     <>
@@ -252,6 +272,32 @@ function OrderOnline(props) {
                         aria-label="..."
                       />{" "}
                       Veg Only
+
+
+                                      <div style={{ float: 'right' }}>
+                                              <Box
+                                                  border={1}
+                                                  borderColor={'grey'}
+                                                  borderRadius={5}
+                                                  className={classes.searchBox}
+                                              >
+                                                  <input
+                                                      className={classes.searchInput}
+                                                      onChange={handleSearchFood}
+                                                      type="text"
+                                                      value={searchFood}
+                                                      placeholder="Search Food"
+                                                  />
+                                                  <Button
+                                                      onClick={() => {
+                                                          setSearchFood('');
+                                                      }}
+                                                      style={{ width: '5%' }}
+                                                  >
+                                                      <CloseIcon style={{ color: 'grey' }} />
+                                                  </Button>
+                                              </Box>
+                                          </div>
                     </div>
                   </div>
                   <hr />
@@ -259,10 +305,20 @@ function OrderOnline(props) {
                     <div>
                       <h4 style={{ fontWeight: "300" }}>Recommemded</h4>
                     </div>
-                    {data &&
-                      data.menu?.map((dish, i) => (
-                        <DishComponent dish={dish} key={i} />
-                      ))}
+
+{
+                                          searchFood.length==0?
+                                          data &&
+                          data.menu?.map((dish, i) => (                 
+                             <DishComponent dish={dish} key={i} />
+                          )) :
+                                              data &&
+                                              data.menu?.map((dish, i) => (
+                                                      dish.dish.toLowerCase().includes(searchFood.toLowerCase())
+                                                      ? <DishComponent dish={dish} key={i} /> : ""
+                                              ))
+
+                                      }
                   </div>
                 </section>
               </section>

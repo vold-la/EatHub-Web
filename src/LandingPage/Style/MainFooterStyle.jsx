@@ -38,7 +38,7 @@ export const Wrapper = styled.div`
   }
   .footer-Link {
     text-decoration: none;
-    color: rgb(77, 74, 74);
+    color: rgb(74, 74, 74);
     font-size: 0.9rem;
     margin: 3.8px;
   }

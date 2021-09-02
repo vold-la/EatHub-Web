@@ -94,7 +94,7 @@ const useStyles = makeStyles((theme) => ({
     padding: " 5px 8px",
     "&:hover": {
       cursor: "pointer",
-      backgroundColor: "#f2f2f2",
+      backgroundColor: "#d1d1d1",
     },
   },
   searchRestaurantCardDiv: {
@@ -112,7 +112,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     "& >div:hover": {
       cursor: "pointer",
-      backgroundColor: "#f2f2f2",
+      backgroundColor: "#d1d1d1",
     },
   },
 }));
@@ -239,7 +239,7 @@ function SearchBar(props) {
                 value={searchRestaurant}
                 onChange={handleRestaurantSearch}
                 type="text"
-                placeholder="Search for restaurant or a dish"
+                placeholder="Search for restaurants"
               />
               <SearchIcon />
             </Box>
@@ -355,8 +355,8 @@ function SearchBar(props) {
                                   fontWeight: "300",
                                 }}
                               >
-                                Order Now
-                                <ArrowRightIcon />
+                              Order Now
+                              <ArrowRightIcon style={{ color: 'black' }}/>
                               </div>
                             </Link>
                           </Box>

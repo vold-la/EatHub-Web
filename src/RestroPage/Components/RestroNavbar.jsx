@@ -112,7 +112,7 @@ const useStyles = makeStyles((theme) => ({
     padding: " 5px 8px",
     "&:hover": {
       cursor: "pointer",
-      backgroundColor: "#f2f2f2",
+      backgroundColor: "#d1d1d1",
     },
   },
   searchRestaurantCardDiv: {
@@ -130,7 +130,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     "& >div:hover": {
       cursor: "pointer",
-      backgroundColor: "#f2f2f2",
+      backgroundColor: "#d1d1d1",
     },
   },
 

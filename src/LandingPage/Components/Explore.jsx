@@ -70,7 +70,7 @@ const Wrapper = styled.div`
     padding: 0.5rem 0.8rem;
     border-radius: 6px;
     white-space: nowrap;
-    color: #cb202d;
+    color: rgb(0, 0, 0);
     button {
       border: none;
       background-color: inherit;
@@ -80,7 +80,7 @@ const Wrapper = styled.div`
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 500;
-    color: #cb202d;
+    color: rgb(0, 0, 0);
   }
   .text {
     text-decoration: none;
@@ -232,9 +232,9 @@ function Explore() {
                 <div className="main-section" style={{ position: "sticky", top: "0px", zIndex: "10" }} >
                     <div className="container" style={{  backgroundColor : 'rgb(255,255,255)' }}>
                         <div style={{display: 'flex' , justifyContent: 'space-between' }}>
-                            {delivery ? (<h3>Best Delivery Restaurant in {searchCity} </h3>)
-                             : dineOut ? (<h3>Best Dinning Restaurant in {searchCity} </h3>)
-                             : nightLife ? (<h3>Best Pubs & Bar in {searchCity} </h3>)
+                            {delivery ? (<h3>Delivery Restaurant in {searchCity} </h3>)
+                             : dineOut ? (<h3>Dinning Restaurant in {searchCity} </h3>)
+                             : nightLife ? (<h3>Pubs & Bar in {searchCity} </h3>)
                              : (<h3>Best Restaurant for Members in {searchCity} </h3>)
                              }
 

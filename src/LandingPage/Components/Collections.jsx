@@ -23,13 +23,13 @@ function Collections(props) {
           <h2 className="collection">Collections</h2>
           <div className="text-div">
             <h6 className="text">
-              Explore curated lists of top restaurants, cafes, pubs, and bars in{" "}
+              Explore curated collections restaurants, cafes, pubs in{" "}
               {searchCity}, based on trends
             </h6>
             <Link className="link" to="/#">
               <span className="link-text">
                 All collection in {searchCity}
-                <ArrowRightIcon />
+              <ArrowRightIcon style={{ color: '#cae6d5' }}/>
               </span>
             </Link>
           </div>

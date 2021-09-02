@@ -15,7 +15,7 @@ export const Wrapper = styled.div`
     font-size: 14px;
   }
   .active {
-    color: rgb(176, 172, 172);
+    color: rgb(172, 172, 172);
   }
   .item-img1 {
     width: 575px;

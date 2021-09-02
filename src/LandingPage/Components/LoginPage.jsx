@@ -16,7 +16,7 @@ import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 import clsx from "clsx";
 import { Button } from "@material-ui/core";
 import TextField from "@material-ui/core/TextField";
-import InputBox from "./InputBox";
+import InputBox from "../../Extras/OtpBox/InputBox";
 import { GoogleLogin } from "react-google-login";
 
 const DefaultButton = styled.button`
@@ -24,8 +24,8 @@ const DefaultButton = styled.button`
   margin: 30px 0px 0px 0px;
   padding: 10px 0px;
   background-color: white;
-  color: rgb(156, 156, 156);
-  border: 0.5px solid rgb(156, 156, 156);
+  color: rgb(155, 155, 155);
+  border: 0.5px solid rgb(155, 155, 155);
   border-radius: 6px;
   img {
     width: 24px;
@@ -54,10 +54,11 @@ const DividerWrapper = styled.div`
 
 const LinkWrapper = styled.div`
   padding-top: 12px;
+  color: rgb(105, 105, 105);
   button {
     border: none;
     background-color: inherit;
-    color: rgb(237, 90, 107);
+    color: rgb(0, 0, 0);
     margin: 0px 5px;
   }
 `;
@@ -67,7 +68,7 @@ const ResetButton = styled.button`
   outline: none;
   background-color: inherit;
   ${(props) =>
-    props.disabled === true ? `color: grey` : `color: rgb(237, 90, 107)`}
+    props.disabled === true ? `color: grey` : `color: rgb(0, 0, 0)`}
 `;
 
 const OTPTimerWrapper = styled.div`
@@ -114,7 +115,7 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
   },
   root: {
-    background: "rgb(237, 90, 107)",
+    background: "rgb(0,0,0)",
     width: "100%",
     color: "white",
     margin: "20px 0px",
@@ -123,7 +124,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "16px",
     textTransform: "none",
     "&:hover": {
-      background: "#f7394f",
+        background: "rgb(30,30,30)",
     },
   },
   inputFields: {
@@ -270,7 +271,7 @@ function LoginPage(props) {
               >
                 <div className={classes.otpDescription}>
                   One Time Password has been sent to your email, {email}, please
-                  enter the same here to login. Valid for 10 minutes.
+                  enter. Valid for 10 minutes.
                 </div>
               </div>
               <InputBox length={5} onChange={(val) => validateOTP(val)} />
