@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { InputWrapper } from "../Style/InputBoxStyle";
+import { InputWrapper } from "./InputBoxStyle";
 
 class InputBox extends React.Component {
   constructor(props) {
