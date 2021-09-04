@@ -106,6 +106,18 @@ export const Wrapper = styled.div`
     font-size: 1rem;
     display: block;
   }
+.dine-rev1 {
+    line-height: 1.5;
+    margin: 0px;
+    color: rgb(120,200,120);
+    width: max-content;
+    border-bottom: 1px dashed rgb(181, 181, 181);
+    padding-bottom: 0.2rem;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 1rem;
+    display: block;
+  }
   .blog-div {
     display: flex;
     -webkit-box-pack: justify;
@@ -124,7 +136,8 @@ export const Wrapper = styled.div`
     transition: opacity 0.2s ease-in-out 0s;
   }
   .rev-btn {
-    margin-right: 1rem;
+    margin-top : 1rem;
+    margin-right: 1.2rem;
     min-width: auto;
     min-height: 36px;
     display: inline-flex;
@@ -155,8 +168,8 @@ export const Wrapper = styled.div`
     font-weight: 300;
     color: rgb(255, 255, 255);
     opacity: 1;
-    background: border-box rgb(237, 90, 107);
-    border-color: rgb(237, 90, 107);
+    background: border-box rgb(0,0,0);
+    border-color: rgb(0,0,0);
     border-width: 0px;
     border-style: solid;
     border-radius: 0.6rem;
@@ -189,10 +202,10 @@ export const Wrapper = styled.div`
     white-space: nowrap;
     font-size: 1.1rem;
     font-weight: 300;
-    color: rgb(237, 90, 107);
+    color: rgb(202,230,213);
     opacity: 1;
 
-    border-color: rgb(28, 28, 28);
+    border-color: rgb(202,230,213);
     border-width: 0px;
     border-style: solid;
     border-radius: 0.6rem;
@@ -202,6 +215,7 @@ export const Wrapper = styled.div`
     outline: none !important;
   }
   .btn {
+    margin-top : 1rem;
     margin-right: 1rem;
     min-width: auto;
     min-height: 36px;
@@ -211,7 +225,7 @@ export const Wrapper = styled.div`
     border-radius: 0.6rem;
     background: transparent;
     padding: 0px;
-    border: 1px solid rgb(28, 28, 28);
+    border: 1px solid rgb(120,200,120);
     cursor: pointer;
   }
 

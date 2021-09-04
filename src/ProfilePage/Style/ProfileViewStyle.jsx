@@ -38,7 +38,6 @@ export const Wrapper = styled.div`
     padding: 8px;
   }
   .photos {
-    border-right: 1px solid white;
     margin-right: 5px;
     padding: 8px;
   }

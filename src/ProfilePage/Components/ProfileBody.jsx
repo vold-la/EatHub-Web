@@ -139,45 +139,19 @@ export default function ProfileBody() {
           <div className={classes.root}>
             <Tabs
               orientation="vertical"
+              TabIndicatorProps={{ style: { backgroundColor: "rgb(120,200,120)" } }}
               variant="scrollable"
               value={value}
               onChange={handleChange}
               className={classes.tabs}
             >
-              <Tab label="Dineline" {...a11yProps(0)} />
-              <Tab label="Photo" {...a11yProps(1)} />
-              <Tab label="Followers" {...a11yProps(2)} />
-              <Tab label="Bookmarks" {...a11yProps(3)} />
-              <Tab label="Reviews" {...a11yProps(4)} />
-              <Tab label="Blog Posts" {...a11yProps(5)} />
-              <Tab label="Order History" {...a11yProps(6)} />
-              <Tab label="My addresses" {...a11yProps(7)} />
-              <Tab label="Favorite Orders" {...a11yProps(8)} />
+              <Tab label="Photo" {...a11yProps(0)} />
+              <Tab label="Bookmarks" {...a11yProps(1)} />
+              <Tab label="Reviews" {...a11yProps(2)} />
+              <Tab label="Order History" {...a11yProps(3)} />
+              <Tab label="My addresses" {...a11yProps(4)} />
             </Tabs>
             <TabPanel value={value} index={0}>
-              <h3>Dineline</h3>
-              <img
-                src="https://i.pinimg.com/originals/ac/03/a3/ac03a320e12ca1517d0543ff11300f6c.png"
-                alt="dine"
-                style={{
-                  height: "150px",
-                  display: "block",
-                  marginLeft: "200px",
-                  marginRight: "200px",
-                  marginTop: "90px",
-                }}
-              />
-              <p
-                style={{
-                  marginLeft: "200px",
-                  marginRight: "180px",
-                  fontSize: "22px",
-                }}
-              >
-                Nothing here yet
-              </p>
-            </TabPanel>
-            <TabPanel value={value} index={1}>
               <h3>Photos</h3>
               <img
                 src="https://b.zmtcdn.com/webFrontend/1a33af2333871e0c1222a3ee21ea697f1581070577.png"
@@ -197,40 +171,10 @@ export default function ProfileBody() {
                   fontSize: "22px",
                 }}
               >
-                Nothing here yet
+                Nothing here yet (Image From Zomato)
               </p>
             </TabPanel>
-            <TabPanel value={value} index={2}>
-              <h3>Followers</h3>
-              <div className="d-flex">
-                <button type="button" className="btn btn-outline-danger">
-                  Following(0)
-                </button>
-                <button type="button" className="btn btn-danger ml-3">
-                  Followers(0)
-                </button>
-              </div>
-              <img
-                src="https://b.zmtcdn.com/webFrontend/c33e5cd0b755a03f9b2f374b1b8271a91581004801.png"
-                alt="dine"
-                style={{
-                  height: "150px",
-                  display: "block",
-                  marginLeft: "300px",
-                  marginRight: "300px",
-                  marginTop: "90px",
-                }}
-              />
-              <div
-                style={{
-                  marginLeft: "300px",
-                  marginRight: "300px",
-                }}
-              >
-                You are not followed by any users yet.
-              </div>
-            </TabPanel>
-            <TabPanel value={value} index={3}>
+            <TabPanel value={value} index={1}>
               <h3>Bookmarks</h3>
 
               <img
@@ -250,10 +194,10 @@ export default function ProfileBody() {
                   marginRight: "300px",
                 }}
               >
-                No Bookmarks yet
+                No Bookmarks yet (Image From Zomato)
               </p>
             </TabPanel>
-            <TabPanel value={value} index={4}>
+            <TabPanel value={value} index={2}>
               <h3>Reviews</h3>
 
               <img
@@ -273,33 +217,10 @@ export default function ProfileBody() {
                   marginRight: "300px",
                 }}
               >
-                Nothing here yet
+                Nothing here yet ((Image From Zomato))
               </p>
             </TabPanel>
-            <TabPanel value={value} index={5}>
-              <h3>Blog Posts</h3>
-
-              <img
-                src="https://ahrefs.com/blog/wp-content/uploads/2019/03/blog-how-to-write-a-blog-post-400x200.png"
-                alt="dine"
-                style={{
-                  height: "150px",
-                  display: "block",
-                  marginLeft: "200px",
-                  marginRight: "200px",
-                  marginTop: "90px",
-                }}
-              />
-              <p
-                style={{
-                  marginLeft: "280px",
-                  marginRight: "280px",
-                }}
-              >
-                Nothing here yet
-              </p>
-            </TabPanel>
-            <TabPanel value={value} index={6}>
+            <TabPanel value={value} index={3}>
               <h3 style={{ paddingLeft: "15px" }}>Order History</h3>
               <div className="d-flex flex-wrap">
                 {userBackendDetails.orders &&
@@ -383,7 +304,7 @@ export default function ProfileBody() {
                               <div>
                                 <button
                                   type="button"
-                                  className="btn btn-outline-danger"
+                                  className="btn btnbl btn-outline"
                                   onClick={() => handleOpen(item.orderId)}
                                 >
                                   View Details
@@ -638,38 +559,15 @@ export default function ProfileBody() {
                   })}
               </div>
             </TabPanel>
-            <TabPanel value={value} index={7}>
+            <TabPanel value={value} index={4}>
               <div className="card p-5" style={{ width: "18rem" }}>
                 <div className="card-body" type="button" onClick={handleOpen}>
                   <AddCircleOutlineIcon
-                    style={{ color: "red", marginLeft: "60px" }}
+                    style={{ color: "black", marginLeft: "60px" }}
                   />
                   <h5 style={{ textAlign: "center" }}>Add address</h5>
                 </div>
               </div>
-            </TabPanel>
-            <TabPanel value={value} index={8}>
-              <h3>Favorite Orders</h3>
-
-              <img
-                src="https://b.zmtcdn.com/webFrontend/96a9a259cfa3dd8e260d65d1f135ab941581004545.png"
-                alt="dine"
-                style={{
-                  height: "150px",
-                  display: "block",
-                  marginLeft: "300px",
-                  marginRight: "300px",
-                  marginTop: "90px",
-                }}
-              />
-              <p
-                style={{
-                  marginLeft: "330px",
-                  marginRight: "300px",
-                }}
-              >
-                Nothing here yet
-              </p>
             </TabPanel>
           </div>
         </div>

@@ -5,7 +5,7 @@ import LandingPage from "../LandingPage/LandingPage";
 import { getCityId, getCityCollection } from "../LandingPage/Redux/action";
 import RestroPage from "../RestroPage/RestroPage";
 import CollectionsPage from "../CollectionsPage/CollectionsPage";
-import ExploreZomato from "../ExploreZomato/ExploreZomato";
+import ExploreAll from "../ExploreAll/ExploreAll";
 import Checkout from "../Checkout/Checkout";
 import ProfilePage from "../ProfilePage/ProfilePage";
 import PaymentSuccessPage from "../PaymentSuccessPage/PaymentSuccessPage";
@@ -86,7 +86,7 @@ https://b.zmtcdn.com/web_assets/b69badeeb9ef00f59428b4c09ef4c1901575873261.png"
                     path="/:city/collections/:collections"
                     render={() => <CollectionsPage />}
                 />
-                <Route path="/:city/explore" render={() => <ExploreZomato />} />
+                <Route path="/:city/explore" render={() => <ExploreAll />} />
                 <Route path="/users/:username" render={() => <ProfilePage />} />
                 <Route path="/:city/payment" render={() => <PaymentSuccessPage />} />
                 <Route path="/:city/addrestaurant" render={() => <AddRestaurant />} />

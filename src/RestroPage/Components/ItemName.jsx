@@ -6,9 +6,7 @@ import { getUserLocation } from "../../LandingPage/Redux/action";
 import HelpOutlineIcon from "@material-ui/icons/HelpOutline";
 import AssistantIcon from "@material-ui/icons/Star";
 import StarBorderIcon from "@material-ui/icons/StarBorder";
-import DirectionsIcon from "@material-ui/icons/Directions";
 import BookmarkBorderIcon from "@material-ui/icons/BookmarkBorder";
-import ShareIcon from "@material-ui/icons/Share";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Popover from "react-bootstrap/Popover";
 import { Wrapper } from "../Style/ItemNameStyle";
@@ -147,71 +145,43 @@ function ItemName(props) {
                 <p className="dine-rev">
                   {data && data.all_reviews_count} Dining Reviews
                 </p>
-              </div>
+                          </div>
+              <button className="rev-btn">
+                              <span className="add-rev">
+                                  <StarBorderIcon />
+                                  <span className="rev-text">Add Review</span>
+                              </span>
+                          </button>
             </section>
             <section className="star-sec">
               <div className="ratings">
                 <AssistantIcon
-                  style={{ marginLeft: "18px", color: " rgb(237, 90, 107)" }}
+                                  style={{ marginLeft: "18px", color: " rgb(120,200,120)" }}
                 />
-                <AssistantIcon style={{ color: " rgb(237, 90, 107)" }} />
-                <AssistantIcon style={{ color: " rgb(237, 90, 107)" }} />
-                <AssistantIcon style={{ color: " rgb(237, 90, 107)" }} />
+                              <AssistantIcon style={{ color: "rgb(120,200,120)" }} />
+                              <AssistantIcon style={{ color: "rgb(120,200,120)" }} />
+                              <AssistantIcon style={{ color: "rgb(120,200,120)" }} />
                 <AssistantIcon
                   style={{
                     marginRight: "120px",
-                    color: " rgb(237, 90, 107)",
+                                      color: "rgb(120,200,120)",
                   }}
                 />
               </div>
               <div>
-                <p className="dine-rev">
+                <p className="dine-rev1">
                   {data.user_rating && data.user_rating.votes} Delivery Reviews
                 </p>
-              </div>
+                          </div>
+              <div className="btn">
+                              <span className="add">
+                                  <BookmarkBorderIcon style={{ color: 'rgb(120,200,120)' }} />
+                                  <span style={{ color: "rgb(120,200,120)" }}>Bookmark</span>
+                              </span>
+                          </div>
             </section>
           </section>
         </section>
-        <div className="blog-div">
-          <section className="blog-sec">
-            <button className="rev-btn">
-              <span className="add-rev">
-                <StarBorderIcon />
-                <span className="rev-text">Add Review</span>
-              </span>
-            </button>
-            <div className="btn">
-              {/* <a
-                rel="noreferrer"
-                target="_blank"
-                href={`https://www.google.com/maps/dir/?api=1&origin=${
-                  userCoordinates.latitude
-                },${userCoordinates.longitude}&destination=${
-                  data && data.location && data.location.cords.coordinates[1]
-                },${
-                  data && data.location && data.location.cords.coordinates[0]
-                }`}
-              > */}
-              <span className="add" onClick={goToLocation}>
-                <DirectionsIcon />
-                <span style={{ color: "rgb(28, 28, 28)" }}>Direction</span>
-              </span>
-              {/* </a> */}
-            </div>
-            <div className="btn">
-              <span className="add">
-                <BookmarkBorderIcon />
-                <span style={{ color: "rgb(28, 28, 28)" }}>Bookmark</span>
-              </span>
-            </div>
-            <div className="btn">
-              <span className="add">
-                <ShareIcon />
-                <span style={{ color: "rgb(28, 28, 28)" }}>Share</span>
-              </span>
-            </div>
-          </section>
-        </div>
       </section>
     </Wrapper>
   );

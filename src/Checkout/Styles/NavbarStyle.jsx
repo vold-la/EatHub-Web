@@ -13,7 +13,7 @@ export const Wrapper = styled.div`
     }
     .backButton {
       background-color: inherit;
-      color: inherit;
+      color: 'black';
       border: 0px;
     }
     .Logo {
@@ -30,10 +30,10 @@ export const Wrapper = styled.div`
       align-items: center;
       margin: 0px 15px;
       font-weight: 300;
-      color: rgb(237, 90, 107);
+      color: rgb(0,0,0);
       :hover {
         background-color: white;
-        color: rgb(247, 77, 96);
+        color: rgb(75,75,75);
       }
     }
     .navigationButton {

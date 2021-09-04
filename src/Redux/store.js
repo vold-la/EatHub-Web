@@ -5,7 +5,7 @@ import { landingPageReducer } from "../LandingPage/Redux/reducer";
 import { restaurantReducer } from "../RestroPage/Redux/reducer";
 import { collectionPageReducer } from "../CollectionsPage/Redux/reducer";
 import thunk from "redux-thunk";
-import { restaurantFilterReducer } from "../ExploreZomato/Redux/reducer";
+import { restaurantFilterReducer } from "../ExploreAll/Redux/reducer";
 
 const rootReducer = combineReducers({
   landingPageReducer,

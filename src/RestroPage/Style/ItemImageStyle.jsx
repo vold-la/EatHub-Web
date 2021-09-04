@@ -18,16 +18,16 @@ export const Wrapper = styled.div`
     color: rgb(172, 172, 172);
   }
   .item-img1 {
-    width: 575px;
-    height: 400px;
+    width: 350px;
+    height: 250px;
     transition: all 0.5s;
   }
   .item-img1:hover {
     transform: scale(1.02);
   }
   .item-img2 {
-    width: 190px;
-    height: 198px;
+    width: 170px;
+    height: 125px;
     transition: all 0.5s;
   }
   .item-img2:hover {

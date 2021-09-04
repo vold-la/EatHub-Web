@@ -146,8 +146,8 @@ export const Wrapper = styled.div`
     font-weight: 300;
     color: rgb(255, 255, 255);
     opacity: 1;
-    background: border-box rgb(237, 90, 107);
-    border-color: rgb(237, 90, 107);
+    background: border-box rgb(0,0,0);
+    border-color: rgb(0,0,0);
     border-width: 0px;
     border-style: solid;
     border-radius: 0.6rem;
@@ -180,7 +180,7 @@ export const Wrapper = styled.div`
     white-space: nowrap;
     font-size: 1.1rem;
     font-weight: 300;
-    color: rgb(237, 90, 107);
+    color: rgb(0,0,0);
     opacity: 1;
 
     border-color: rgb(28, 28, 28);

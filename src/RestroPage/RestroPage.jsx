@@ -160,7 +160,7 @@ function RestroPage() {
             <ItemName data={data} />
           </div>
 
-          <Wrapper style={{ position: "sticky", top: "180px", zIndex: "10" }}>
+          <Wrapper style={{ position: "sticky", top: "160px", zIndex: "10" }}>
             <article className="main-div container">
               <div className="sec-div">
                 <section className="heading-section">
@@ -231,11 +231,11 @@ function RestroPage() {
           ) : orderOnlinePage ? (
             <OrderOnline data={data} />
           ) : reviewPage ? (
-            <Review />
+            <Review data={data.all_reviews.reviews} />
           ) : menuPage ? (
             <Menu />
           ) : (
-            <Photos />
+            <Photos data={data.photos}/>
           )}
         </>
       )}

@@ -158,60 +158,6 @@ function Overview(props) {
               </div>
             </div>
             <div className="container">
-              <h5 className="sponser">OUR SPONSORS</h5>
-              <div className="d-flex">
-                <img
-                  src="https://b.zmtcdn.com/data/pictures/9/307799/1d9603b50698211cdd5106611616a40e_featured_v2.jpg?output-format=webp"
-                  alt="card1"
-                  className="sponser-img"
-                />
-
-                <img
-                  src="https://b.zmtcdn.com/data/pictures/5/300185/47cf5aaf952fedd97b6db37a44f595a6_featured_v2.jpg?output-format=webp"
-                  alt="card2"
-                  className="sponser-img"
-                />
-              </div>
-              <div className="d-flex">
-                <div>
-                  <h4 className="sponser-text">Wok In The Clouds</h4>
-                  <div className="votes">
-                    <div className="votes-count">
-                      <AssistantIcon className="votes-icons1" />
-                      <p className="votes-rating">4.2</p>
-                      <p className="votes-number">(1,128)</p>
-                      <div className="hr"></div>
-                    </div>
-                    <div className="votes-count">
-                      <AssistantIcon className="votes-icons2" />
-                      <p className="votes-rating">4.2</p>
-                      <p className="votes-number">(1,128)</p>
-                      <div className="hr"></div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <h4 className="sponser-text sponser-margin">
-                    High On Burgers
-                  </h4>
-                  <div className="votes ">
-                    <div className="votes-count sponser-margin">
-                      <AssistantIcon className="votes-icons2" />
-                      <p className="votes-rating">4.0</p>
-                      <p className="votes-number">(128)</p>
-                      <div className="hr"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="d-flex">
-                <p className="m-2">
-                  Chinese, Thai, Continental,North Indian, Beverages
-                </p>
-                <p>Fast Food</p>
-              </div>
-            </div>
-            <div className="container">
               <h5 className="exp-div">Tap to rate Your experience</h5>
               <div className="d-flex">
                 <StarBorderIcon className="exp-icons" />
@@ -224,18 +170,10 @@ function Overview(props) {
             </div>
             <div className="container">
               <h4 className="highlights">Review Highlights</h4>
-              <span className="highlight-div">Amritsari Koolcha</span>
-              <span className="highlight-div">Crispy Jalebi</span>
-              <span className="highlight-div">Malai Ghewar</span>
-              <span className="highlight-div">Imarti</span>
-              <span className="highlight-div">Matar Kulcha</span>
-              <span className="highlight-div">Raj Kachori</span>
-              <span className="highlight-div">Drive through</span>
-              <span className="highlight-div">Chirpy Crowd</span>
-              <span className="highlight-div">Cozy Ambiance</span>
-              <span className="highlight-div">Inexpensive</span>
-              <span className="highlight-div">Family Restaurant</span>
-              <span className="highlight-div">Street Food</span>
+              <span className="highlight-div">ML Part</span>
+              <span className="highlight-div">Feature</span>
+              <span className="highlight-div">Coming</span>
+              <span className="highlight-div">Soon</span>
             </div>
             <div className="container">
               <hr />
@@ -251,29 +189,23 @@ function Overview(props) {
                         width: "50",
                         borderRadius: "50%",
                       }}
-                      src="https://b.zmtcdn.com/data/user_profile_pictures/009/afaae1a1a440878bf063a3dbd8c79009.jpg?fit=around%7C100%3A100&crop=100%3A100%3B%2A%2C%2A"
-                      alt=""
+                                          src="https://img.icons8.com/color/48/000000/matcha.png"
+                                          alt=""
                     />
-                  </div>
-                  <div className="d-flex flex-column ml-3">
-                    <h5 style={{ fontWeight: "400" }}>Bhavya</h5>
-                    <p style={{ fontSize: "12px" }}>
-                      48 Reviews . 78 Followers
-                    </p>
                   </div>
                 </div>
                 <div className="follow-div">
-                  <button type="button" className="btn btn-outline-danger">
+                  <button type="button" className="btn" style={{color : 'rgb(120,200,120)' }}>
                     Follow
                   </button>
                 </div>
               </div>
               <div className="d-flex">
-                <AssistantIcon style={{ color: "rgb(237,90,107)" }} />
-                <AssistantIcon style={{ color: "rgb(237,90,107)" }} />
-                <AssistantIcon style={{ color: "rgb(237,90,107)" }} />
-                <AssistantIcon style={{ color: "rgb(237,90,107)" }} />
-                <AssistantIcon style={{ color: "rgb(237,90,107)" }} />
+                <AssistantIcon style={{ color: "rgb(0,0,0)" }} />
+                <AssistantIcon style={{ color: "rgb(0,0,0)" }} />
+                <AssistantIcon style={{ color: "rgb(0,0,0)" }} />
+                <AssistantIcon style={{ color: "rgb(0,0,0)" }} />
+                <AssistantIcon style={{ color: "rgb(0,0,0)" }} />
                 <h5>5.0</h5>
                 <div>
                   <p className="ml-2">8 days ago</p>
@@ -289,8 +221,8 @@ function Overview(props) {
                 </span>
               </div>
               <div className="p-2">
-                              <p>
-                                  Very Good restaurant and serve piping food
+                <p>
+                  Very Good restaurant and serve piping food
                 </p>
                 <div>
                   <img
@@ -319,29 +251,23 @@ function Overview(props) {
                         width: "50",
                         borderRadius: "50%",
                       }}
-                      src="https://b.zmtcdn.com/data/user_profile_pictures/009/afaae1a1a440878bf063a3dbd8c79009.jpg?fit=around%7C100%3A100&crop=100%3A100%3B%2A%2C%2A"
-                      alt=""
+                                          src="https://img.icons8.com/color/48/000000/matcha.png"
+                                          alt=""
                     />
-                  </div>
-                  <div className="d-flex flex-column ml-3">
-                    <h5 style={{ fontWeight: "400" }}>Bhavya</h5>
-                    <p style={{ fontSize: "12px" }}>
-                      48 Reviews . 78 Followers
-                    </p>
                   </div>
                 </div>
                 <div className="follow-div">
-                  <button type="button" className="btn btn-outline-danger">
+                  <button type="button" style={{color : 'rgb(120,200,120)' }}>
                     Follow
                   </button>
                 </div>
               </div>
               <div className="d-flex">
-                <AssistantIcon style={{ color: "rgb(237,90,107)" }} />
-                <AssistantIcon style={{ color: "rgb(237,90,107)" }} />
-                <AssistantIcon style={{ color: "rgb(237,90,107)" }} />
-                <AssistantIcon style={{ color: "rgb(237,90,107)" }} />
-                <AssistantIcon style={{ color: "rgb(237,90,107)" }} />
+                <AssistantIcon style={{ color: "rgb(0,0,0)" }} />
+                <AssistantIcon style={{ color: "rgb(0,0,0)" }} />
+                <AssistantIcon style={{ color: "rgb(0,0,0)" }} />
+                <AssistantIcon style={{ color: "rgb(0,0,0)" }} />
+                <AssistantIcon style={{ color: "rgb(0,0,0)" }} />
                 <h5>5.0</h5>
                 <div>
                   <p className="ml-2">8 days ago</p>
@@ -357,9 +283,9 @@ function Overview(props) {
                 </span>
               </div>
               <div className="p-2">
-                              <p>
-                                  Very Good restaurant and serve piping food.
-                </p>
+              <p>
+                Very Good restaurant and serve piping food.
+              </p>
                 <div>
                   <img
                     src="https://b.zmtcdn.com/data/reviews_photos/798/e88230d81eefdb8f57e2df1038a81798_1564074695.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A"
@@ -401,7 +327,7 @@ function Overview(props) {
               </div>
               <div className="d-flex">
                 <div>
-                  <h4 className="sponser-text">HONG KONG EXPRESS</h4>
+                  <h4 className="sponser-text">DUMMY REST1</h4>
                   <div className="votes">
                     <div className="votes-count">
                       <AssistantIcon className="votes-icons1" />
@@ -418,7 +344,7 @@ function Overview(props) {
                   </div>
                 </div>
                 <div>
-                  <h4 className="sponser-text sponser-margin">Sandoz</h4>
+                  <h4 className="sponser-text sponser-margin">REAL COMING SOON</h4>
                   <div className="votes ">
                     <div className="votes-count sponser-margin">
                       <AssistantIcon className="votes-icons2" />
@@ -444,74 +370,10 @@ function Overview(props) {
                 </p>
               </div>
             </div>
-            <div className="container">
-              <div className="d-flex">
-                <img
-                  src="https://b.zmtcdn.com/data/pictures/chains/2/1922/bf8d8a5a7f74b5d413256af2fdfffc35_featured_v2.jpg?output-format=webp"
-                  alt="card1"
-                  className="sponser-img"
-                />
-
-                <img
-                  src="https://b.zmtcdn.com/data/pictures/chains/8/18582328/c5befd62e62f87dd38eb3866080aa799_featured_v2.jpg?output-format=webp"
-                  alt="card2"
-                  className="sponser-img"
-                />
-              </div>
-              <div className="d-flex">
-                <div>
-                  <h4 className="sponser-text">Culinare</h4>
-                  <div className="votes">
-                    <div className="votes-count">
-                      <AssistantIcon className="votes-icons1" />
-                      <p className="votes-rating">4.2</p>
-                      <p className="votes-number">(1,128)</p>
-                      <div className="hr"></div>
-                    </div>
-                    <div className="votes-count">
-                      <AssistantIcon className="votes-icons2" />
-                      <p className="votes-rating">4.2</p>
-                      <p className="votes-number">(1,128)</p>
-                      <div className="hr"></div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <h4 className="sponser-text sponser-margin">
-                    The Turkey Project
-                  </h4>
-                  <div className="votes ">
-                    <div className="votes-count sponser-margin">
-                      <AssistantIcon className="votes-icons2" />
-                      <p className="votes-rating">4.0</p>
-                      <p className="votes-number">(128)</p>
-                      <div className="hr"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="d-flex">
-                <p style={{ fontSize: "13px", fontWeight: "200" }}>
-                  Chinese, Thai, Continental,North Indian
-                </p>
-                <p
-                  style={{
-                    marginLeft: "130px",
-                    fontSize: "13px",
-                    fontWeight: "200",
-                  }}
-                >
-                  Fast Food
-                </p>
-              </div>
-            </div>
-            <div className="container">
-              <hr />
-            </div>
-
+            
             <div className="help-sec container">
               <div className="help-text">HELP US MAKE EATHUB BETTER</div>
-              <h4 className="error-text">Report an error in this listing</h4>
+              <h4 className="error-text">Report an error or contribute on github</h4>
               <div className="help-desc">
                 Help us make EatHub more updated and relevant for everyone
               </div>
@@ -531,11 +393,11 @@ function Overview(props) {
               <CardContent>
                 <div className="mt-2 mb-2">
                   <div style={{ fontSize: "20px" }}>Call</div>
-                  <div style={{ color: "red", fontSize: "15px" }}>
+                  <div style={{ color: "grey", fontSize: "15px" }}>
                     {data.phone_numbers}
                   </div>
                 </div>
-                <div style={{ fontSize: "20px" }}>Direction</div>
+                <div style={{ fontSize: "20px"}}>Direction</div>
                 <img
                   src={`https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/pin-s-l+000(${restaurantLocation[0]},${restaurantLocation[1]})/${restaurantLocation[0]},${restaurantLocation[1]},14/500x300?access_token=pk.eyJ1IjoibWFuaXNoLWt1bWFyLWRldiIsImEiOiJja2gyOGw4b24wOWhwMnNtemVmeHA2djV0In0.IWI4BNamZ8XXAawc2fuk8w`}
                   alt="Restaurant Location"
@@ -546,8 +408,8 @@ function Overview(props) {
                 </div>
                 <div className="btn">
                   <span className="add" onClick={goToLocation}>
-                    <DirectionsIcon />
-                    <span style={{ color: "rgb(28, 28, 28)" }}>Direction</span>
+                    <DirectionsIcon style={{color : 'rgb(120,200,120)' }}/>
+                    <span style={{ color: "rgb(120,200,120)" }}>Direction</span>
                   </span>
                 </div>
               </CardContent>

@@ -88,7 +88,7 @@ const Wrapper = styled.div`
     border: none;
     cursor: pointer;
     overflow: hidden;
-    color: red;
+    color: black;
   }
 `;
 
@@ -219,7 +219,7 @@ function SuccessMessage() {
                   })}
                   <li
                     class="list-group-item"
-                    style={{ fontSize: "15px", color: "red" }}
+                    style={{ fontSize: "15px", color: "black" }}
                   >
                     <button
                       type="button"

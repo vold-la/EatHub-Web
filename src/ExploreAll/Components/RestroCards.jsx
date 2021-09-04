@@ -91,7 +91,7 @@ function RestroCards(props) {
         return (
             <div style={{ minHeight: "90vh" }}>
                 <Backdrop className={classes.backdrop} open={isLoading}>
-                    <CircularProgress color="secondary" />
+                    <CircularProgress style={{ color: '#000000' }} />
                     <div>Coming right up...</div>
                 </Backdrop>
             </div>
@@ -152,7 +152,7 @@ function RestroCards(props) {
                                                                                     .map((star, i) => (
                                                                                         <AssistantIcon
                                                                                             key={i}
-                                                                                            style={{ color: "#E23744" }}
+                                                                                            style={{ color: "#000000" }}
                                                                                         />
                                                                                     ))}
                                                                             <span

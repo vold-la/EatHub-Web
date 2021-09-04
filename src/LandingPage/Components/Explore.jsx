@@ -2,9 +2,9 @@ import React, { useState , useEffect } from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import ExploreZomato from "../../ExploreZomato/Components/RestroCards";
+import RestroCards from "../../ExploreAll/Components/RestroCards";
 import Button from '@material-ui/core/Button';
-import Filters from "../../ExploreZomato/Components/Filters";
+import Filters from "../../ExploreAll/Components/Filters";
 import FilterListIcon from '@material-ui/icons/FilterList';
 import Collections from "./Collections";
 
@@ -249,7 +249,7 @@ function Explore() {
                 </div>
 
                 {delivery ? (
-                    <ExploreZomato
+                    <RestroCards
                         data={deliveryData}
                         sort={ sort}
                         extraFilters={extraFilters}
@@ -259,7 +259,7 @@ function Explore() {
                     />
                 ) : dineOut ? (
                         <>
-                            <ExploreZomato
+                            <RestroCards
                                 data={dineOutData}
                                 sort={sort}
                                 extraFilters={extraFilters}
@@ -270,7 +270,7 @@ function Explore() {
                             <Collections />
                         </>
                 ) : nightLife ? (
-                            <ExploreZomato
+                            <RestroCards
                                 data={nightLifeData}
                                 sort={sort}
                                 extraFilters={extraFilters}
@@ -279,7 +279,7 @@ function Explore() {
                                 setExtraFiltersApplied={setExtraFiltersApplied}
                        />
                 ) : (
-                            <ExploreZomato
+                                <RestroCards
                                     data={membersData}
                                     sort={sort}
                                     extraFilters={extraFilters}

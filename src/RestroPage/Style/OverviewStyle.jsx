@@ -4,89 +4,6 @@ export const Wrapper = styled.div`
     font-family: Poppins;
     font-weight: 300;
   }
-  .offer-div {
-    background: rgb(248, 248, 248);
-    border-radius: 0.8rem;
-    margin-bottom: 2rem;
-    padding: 10px;
-  }
-  .offer {
-    background: rgb(237, 90, 107);
-    border-radius: 0.6rem;
-    width: max-content;
-    padding: 0.1rem 0.5rem;
-    font-size: 1rem;
-    color: rgb(255, 255, 255);
-    margin-bottom: 5px;
-  }
-  .offer-text {
-    margin: 1rem;
-    color: rgb(237, 90, 107);
-    text-decoration: none;
-  }
-  .about {
-    line-height: 1.2;
-    color: rgb(28, 28, 28);
-    margin: 0px;
-    font-size: 1.4rem;
-    font-weight: 500;
-  }
-  .action-div {
-    margin-top: 1.8rem;
-    padding-left: 3px;
-  }
-  .action-sec {
-    display: flex;
-    width: max-content;
-  }
-  .action-box1 {
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.06) 1px 0px 4px;
-    border-radius: 8px;
-    padding: 0.4rem 0.4rem;
-    cursor: pointer;
-    border: 1px solid rgb(232, 232, 232);
-    margin-right: 2rem;
-  }
-  .box1-img {
-    border-radius: 50%;
-    margin-right: 0.6rem;
-    height: 40px;
-    width: 40px;
-  }
-  .box1-text-sec {
-  }
-  .box1-text1 {
-    font-size: 0.6rem;
-    line-height: 1.5;
-    margin: 0px;
-    color: rgb(156, 156, 156);
-  }
-  .box1-text2 {
-    font-size: 0.8rem;
-    line-height: 1.5;
-    margin: 0.2rem 0px 0px;
-    color: rgb(28, 28, 28);
-  }
-  .font-weight {
-    font-weight: 500;
-  }
-  .cuisines {
-    border: 1px solid rgb(207, 207, 207);
-    box-shadow: rgba(54, 54, 54, 0.06) 0px 1px 2px;
-    border-radius: 59px;
-    padding: 0.4rem;
-    display: inline-flex;
-    margin: 0px 1rem 1rem 0px;
-    cursor: pointer;
-    color: rgb(17, 145, 153);
-    font-size: 1.1rem;
-    line-height: 1.2;
-    text-decoration: unset;
-}
-  }
   .dish-heading{
     font-size: 1.4rem;
     line-height: 1.2;
@@ -224,7 +141,7 @@ export const Wrapper = styled.div`
     -webkit-box-align: center;
     align-items: center;
     cursor: inherit;
-    color:rgb(237,90,107);
+    color:rgb(0,0,0);
   }
   .votes-rating{
     margin: 0px 0px 0px 0.4rem;
@@ -273,7 +190,7 @@ export const Wrapper = styled.div`
   .blog-link{
     text-decoration: none;
     font-size: 1rem;
-    color: rgb(237, 90, 107);
+    color: rgb(0,0,0);
     margin-right: 0.4rem;
   }
   .icons{
@@ -281,7 +198,7 @@ export const Wrapper = styled.div`
     -webkit-box-align: center;
     align-items: center;
     cursor: inherit
-    color: rgb(237, 90, 107);
+    color: rgb(0,0,0);
   }
   .widget-div{
     display: flex;
@@ -314,7 +231,7 @@ export const Wrapper = styled.div`
     color:grey;
   }
   .review-note{
-      color:rgb(237, 90, 107)
+      color:rgb(0,0,0)
   }
   .highlights{
     font-size: 2rem;
@@ -452,7 +369,7 @@ export const Wrapper = styled.div`
     white-space: nowrap;
     font-size: 1.1rem;
     font-weight: 300;
-    color: rgb(237, 90, 107);
+    color: rgb(0,0,0);
     opacity: 1;
     background: border-box transparent;
     border-color: transparent;
@@ -467,70 +384,8 @@ export const Wrapper = styled.div`
     white-space: nowrap;
     font-size: 1.4rem;
     font-weight: 300;
-    color: rgb(237, 90, 107);
+    color: rgb(0,0,0);
   }
-  .sim-restro{
-    margin: 2rem 0px;
-  }
-  .sim-restro-heading{
-    font-size: 1.4rem;
-    line-height: 1.2;
-    font-weight: 400;
-    color: rgb(28, 28, 28);
-    margin: 3rem 0px 0.8rem;
-  
- }
- .sim-restro-sec1{
-  margin: 1rem 0px;
- }
- .sim-restro-sec2{
-
- }
- .sim-restro-sec3{
-  position: relative;
-  width: 100%;
- }
- .sim-restro-sec4{
-  position: relative;
-  display: flex;
-  width: 100%;
- }
- .sim-restro-sec5{
-  overflow: hidden;
-}
-.sim-restro-sec6{
-  touch-action: manipulation;
-  display: flex;
-  position: relative;
-  overflow: hidden;
-  width: 3600px;
-  transform: translateX(0px);
-  transition: transform 0.45s ease-in-out 0s;
-}
-
-.sim-restro-sec7{
-  height: auto;
-  width: 233.333px;
-  margin-right: 10px;
-}
-.sim-restro-sec8{
-  width: 23.333rem;
-}
-.sim-restro-link1{
-  text-decoration: none;
-  color: inherit;
-}
-.sim-restro-sec9{
-  position: relative;
-}
-.sim-restro-sec10{
-  border-radius: 0.6rem;
-  position: relative;
-    max-width: 100%;
-    width: 100%;
-    
-    overflow: hidden;
-}
 .img-div{
   width: 100%;
   position: absolute;
@@ -554,139 +409,6 @@ export const Wrapper = styled.div`
   border-radius: 13px;
   transition: opacity 0.25s ease 0s, transform 0.25s ease 0s;
 }
-.sim-restro-sec11{
-  font-size: 1.2rem;
-  line-height: 1.5;
-  margin: 1rem 0px 0px;
-  color: rgb(28, 28, 28);
-  overflow: hidden;
-  white-space: nowrap;
-  width: 100%;
-  text-overflow: ellipsis;
-  font-weight: 400;
-}
-
-.sim-restro-link2{
-  text-decoration: none;
-    color: inherit;
-}
-.sim-restro-sec12{
-  display: flex;
-    height: 2.4rem;
-    margin: 0.4rem 0px;
-
-}
-.sim-restro-sec13{
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  height: 2.4rem;
-}
-.sim-restro-icon1{
-  display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    cursor: inherit;
-}
-.sim-restro-sec14{
-  margin: 0px 0px 0px 0.7rem;
-    color: rgb(28, 28, 28);
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.5;
-}
-.sim-restro-sec15{
-  line-height: 1.5;
-    margin: 0px 0px 0px 0.5rem;
-    color: rgb(79, 79, 79);
-}
-.sim-restro-sec16{
-  font-size: 0.8rem;
-    line-height: 1.5;
-    margin: 0px;
-    color: rgb(54, 54, 54);
-    overflow: hidden;
-    white-space: nowrap;
-    width: 100%;
-    text-overflow: ellipsis;
-    font-weight: normal;
-}
-.sim-restro-sec17{
-  text-decoration: none;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 100%;
-    display: block;
-    margin-top: 0.2rem;
-    color: rgb(130, 130, 130);
-    font-size: 1rem;
-}
-.sim-restro-dots1{
-  position: absolute;
-    height: 100%;
-    width: 3.4rem;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    visibility: visible;
-    opacity: 1;
-    left: unset;
-    right: -1.7rem;
-}
-.sim-restro-dots2{
-  font-size: 0px;
-    height: 3.4rem;
-    width: 3.4rem;
-    background: rgb(255, 255, 255);
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px -1px, rgba(0, 0, 0, 0.14) 0px 6px 10px 0px, rgba(0, 0, 0, 0.12) 0px 1px 18px 0px;
-    border-radius: 50%;
-    position: absolute;
-    z-index: 2;
-    top: 30%;
-    left: unset;
-    right: 0px;
-    display: initial;
-    border: 4px solid transparent;
-    align-self: center;
-    cursor: pointer;
-}
-.sim-restro-dots3{
-  -webkit-box-pack: center;
-  justify-content: center;
-  font-size: 1.8rem;
-  position: absolute;
-  bottom: -25px;
-  width: 100%;
-  padding: 0px;
-  margin: 0px;
-  list-style: none;
-  text-align: center;
-  display: flex !important;
-}
-.sim-restro-dots4{
-  margin: 0px;
-  position: relative;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  padding: 0px;
-  cursor: pointer;
-}
-.sim-restro-dots5{
-  font-size: 0px;
-  line-height: 0;
-  display: block;
-  width: 20px;
-  height: 20px;
-  padding: 5px;
-  cursor: pointer;
-  color: transparent;
-  border: 0px;
-  outline: none;
-  background: transparent;
-}
-
 .loc-near-heading{
   line-height: 1.2;
   color: rgb(28, 28, 28);
@@ -735,7 +457,7 @@ export const Wrapper = styled.div`
   white-space: nowrap;
   font-size: 1.1rem;
   font-weight: 300;
-  color: rgb(237, 90, 107);
+  color: rgb(0,0,0);
   opacity: 1;
 
   border-color: rgb(28, 28, 28);
@@ -757,7 +479,7 @@ export const Wrapper = styled.div`
   border-radius: 0.6rem;
   background: transparent;
   padding: 0px;
-  border: 1px solid rgb(28, 28, 28);
+  border: 1px solid rgb(120,200,120);
   cursor: pointer;
   }
 }

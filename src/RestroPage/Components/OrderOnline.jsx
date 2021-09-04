@@ -64,9 +64,9 @@ const CartWrapper = styled.div`
     }
 
     div:nth-last-child(2) {
-      background-color: rgb(247, 235, 236);
+      background-color: rgb(120,200,120);
       :hover {
-        background-color: #f7d7da;
+        background-color: rgb(120,200,120);
       }
     }
   }
@@ -87,7 +87,7 @@ const useStyles = makeStyles((theme) => ({
     transform: "rotate(0deg)",
   },
   goToCart: {
-    background: "rgb(237, 90, 107)",
+    background: "rgb(0, 0, 0)",
     width: "150px",
     color: "white",
     margin: "20px 0px",
@@ -97,13 +97,13 @@ const useStyles = makeStyles((theme) => ({
     textTransform: "none",
     fontWeight: "300",
     "&:hover": {
-      background: "#f7394f",
+      background: "#000000",
     },
   },
   clearCart: {
-    border: "1px solid rgb(237, 90, 107)",
+    border: "1px solid rgb(120,200,120)",
     width: "150px",
-    color: "rgb(237, 90, 107)",
+    color: "rgb(120,200,120)",
     margin: "20px 10px",
     padding: "6px 0px",
     borderRadius: "6px",
@@ -155,9 +155,9 @@ const useStyles = makeStyles((theme) => ({
     },
 
     "& div:nth-last-child(2)": {
-      backgroundColor: "rgb(247, 235, 236)",
+        backgroundColor: "rgb(120,200,120)",
       "& :hover": {
-        backgroundColor: "#f7d7da",
+          backgroundColor: "rgb(120,200,120)",
       },
     },
   },
@@ -206,11 +206,11 @@ const handleSearchFood = e => {
                 <div>
                   <section className="side-div-left">
                     <p className="side-div-category-active">
-                      Match Time Combos
+                       Recomendation
                     </p>
-                    <p className="side-div-category">Recomended</p>
-                    <p className="side-div-category">Baked Delights</p>
-                    <p className="side-div-category">Sweets</p>
+                    <p className="side-div-category">Categories</p>
+                    <p className="side-div-category">ML Part</p>
+                    <p className="side-div-category">Coming Soon</p>
                   </section>
                 </div>
                 <section className="side-div-right">
@@ -229,7 +229,7 @@ const handleSearchFood = e => {
                       <div className="coupons-div2">
                         <div className="coupons-text-left">50% OFF</div>
                         <div className="coupons-text-right">
-                          use code WELCOME50 to ava...
+                          Coming
                         </div>
                       </div>
                       <div className="coupons-bar">
@@ -239,9 +239,9 @@ const handleSearchFood = e => {
                     </div>
                     <div className="coupons-div1 m-3">
                       <div className="coupons-div2">
-                        <div className="coupons-text-left">50% OFF</div>
+                        <div className="coupons-text-left">40% OFF</div>
                         <div className="coupons-text-right">
-                          <p> use code WELCOME50 to ava...</p>
+                          <p> Soon</p>
                         </div>
                       </div>
                       <div className="coupons-bar">
@@ -251,9 +251,9 @@ const handleSearchFood = e => {
                     </div>
                     <div className="coupons-div1 m-3">
                       <div className="coupons-div2">
-                        <div className="coupons-text-left">50% OFF</div>
+                        <div className="coupons-text-left">30% OFF</div>
                         <div className="coupons-text-right">
-                          use code WELCOME50 to ava...
+                          Yay
                         </div>
                       </div>
                       <div className="coupons-bar">
@@ -266,12 +266,13 @@ const handleSearchFood = e => {
                     <div className="form-check">
                       <input
                         className="form-check-input position-static"
+                        style={{ color: '#000000' }}
                         type="checkbox"
                         id="blankCheckbox"
                         value="option1"
                         aria-label="..."
                       />{" "}
-                      Veg Only
+                      Veg Only (X-Todo)
 
 
                                       <div style={{ float: 'right' }}>
@@ -305,20 +306,18 @@ const handleSearchFood = e => {
                     <div>
                       <h4 style={{ fontWeight: "300" }}>Recommemded</h4>
                     </div>
-
-{
-                                          searchFood.length==0?
-                                          data &&
-                          data.menu?.map((dish, i) => (                 
+                       {
+                         searchFood.length==0?
+                         data &&
+                         data.menu?.map((dish, i) => (                 
                              <DishComponent dish={dish} key={i} />
                           )) :
-                                              data &&
-                                              data.menu?.map((dish, i) => (
+                         data &&
+                         data.menu?.map((dish, i) => (
                                                       dish.dish.toLowerCase().includes(searchFood.toLowerCase())
                                                       ? <DishComponent dish={dish} key={i} /> : ""
                                               ))
-
-                                      }
+                       }
                   </div>
                 </section>
               </section>
@@ -335,16 +334,10 @@ const handleSearchFood = e => {
               </h6>
               <div className="loc-near-names">
                 <Link to="/#" className="loc-near-link">
-                  Tilak Nagar Restaurants,{" "}
+                  Restaurant Feature{" "}
                 </Link>
                 <Link to="/#" className="loc-near-link">
-                  Janakpuri Restaurants,{" "}
-                </Link>
-                <Link to="/#" className="loc-near-link">
-                  Shubhas Nagar Restaurants,{" "}
-                </Link>
-                <Link to="/#" className="loc-near-link">
-                  Mayapuri Phase Two Restaurants
+                  Coming Soon{" "}
                 </Link>
               </div>
             </div>
@@ -433,7 +426,7 @@ const handleSearchFood = e => {
                           >
                             <div className={classes.customizeButton}>
                               <div
-                                style={{ color: "red", fontWeight: "300" }}
+                                style={{ color: "black", fontWeight: "300" }}
                                 className="bd-highlight"
                                 onClick={() => {
                                   dispatch(
@@ -458,7 +451,7 @@ const handleSearchFood = e => {
                                 {item.quantity}
                               </div>
                               <div
-                                style={{ color: "red", fontWeight: "300" }}
+                                style={{ color: "black", fontWeight: "300" }}
                                 className="bd-highlight"
                                 onClick={() => {
                                   dispatch(

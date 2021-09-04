@@ -25,9 +25,9 @@ export const Wrapper = styled.div`
     cursor: pointer;
     padding: 0.8rem 2rem;
     font-weight: 500;
-    color: rgb(237, 90, 107);
-    border-right: 3px solid rgb(237, 90, 107);
-    background: linear-gradient(90deg, rgb(255, 255, 255), rgb(247, 235, 236));
+    color: rgb(120,200,120);
+    border-right: 3px solid rgb(120,200,120);
+    background: linear-gradient(90deg, rgb(255, 255, 255), rgb(110,150,110));
   }
   .side-div-category {
     font-size: inherit;
@@ -36,7 +36,7 @@ export const Wrapper = styled.div`
     cursor: pointer;
     padding: 0.8rem 2rem;
     font-weight: 500;
-    border-right: 3px solid rgb(237, 90, 107);
+    border-right: 3px solid rgb(120,200,120);
   }
   .side-div-right {
     padding-left: 2rem;
@@ -48,7 +48,7 @@ export const Wrapper = styled.div`
     font-weight: 400;
   }
   .order-para {
-    color: rgb(237, 90, 107);
+    color: rgb(0,0,0);
   }
   .coupons-div1 {
     position: relative;
@@ -65,6 +65,11 @@ export const Wrapper = styled.div`
     box-shadow: rgba(54, 54, 54, 0.06) 0px 1px 2px;
     overflow: hidden;
   }
+
+  .coupons-text-right {
+    float : right;
+    color : 'black';
+}
   .coupons-text-left {
     width: 5rem;
     height: 100%;
@@ -75,7 +80,7 @@ export const Wrapper = styled.div`
     padding: 0.5rem;
     font-size: 1rem;
     line-height: 1.6rem;
-    color: rgb(245, 112, 130);
+    color: rgb(0, 0, 0);
     text-align: center;
     font-weight: 600;
   }
@@ -108,7 +113,7 @@ export const Wrapper = styled.div`
     border-radius: 0px 0px 2rem 2rem;
     border-width: 1px;
     border-style: solid;
-    border-color: rgb(255, 255, 255) rgb(232, 232, 232) rgb(232, 232, 232);
+    border-color: rgb(255, 255, 255);
     border-image: initial;
     transform: rotate(180deg);
     box-shadow: rgba(54, 54, 54, 0.06) 0px -2px 2px inset;

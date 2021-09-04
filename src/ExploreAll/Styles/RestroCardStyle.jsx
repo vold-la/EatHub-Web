@@ -17,7 +17,7 @@ export const Wrapper = styled.div`
     font-weight: 700;
     line-height: 20px;
     font-size: 24px;
-    color: #cb202d;
+    color: #000000;
   }
   .ratings-count {
     font-size: 13px;
@@ -26,6 +26,7 @@ export const Wrapper = styled.div`
   }
   .order-min {
     font-size: 14px;
+    color: grey;
   }
   .review-count {
     color: #696969;
@@ -45,6 +46,7 @@ export const Wrapper = styled.div`
     font-size: 25px;
     margin-bottom: 0px;
     font-weight: 600;
+    color: grey;
   }
   nowrap {
     overflow: hidden;

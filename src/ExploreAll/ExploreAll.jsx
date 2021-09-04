@@ -4,7 +4,7 @@ import BreadCrumb from "./Components/BreadCrumbs";
 import RestroCards from "./Components/RestroCards";
 import Footer from "./Components/Footer";
 
-function ExploreZomato() {
+function ExploreAll() {
   return (
     <div>
       <div className="bg-light">
@@ -17,4 +17,4 @@ function ExploreZomato() {
   );
 }
 
-export default ExploreZomato;
+export default ExploreAll;

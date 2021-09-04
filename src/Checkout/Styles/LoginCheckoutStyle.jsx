@@ -75,7 +75,7 @@ export const Wrapper = styled.div`
     margin: 0px 8px;
     outline: none;
     background-color: white;
-    color:  rgb(237, 90, 107);
+    color:  rgb(0,0,0);
   }
 
   .signupBtn{
@@ -84,10 +84,10 @@ export const Wrapper = styled.div`
     width: 100%;
     margin: 0px 8px;
     outline: none;
-    background-color: rgb(237, 90, 107);
+    background-color: rgb(0,0,0);
     color: white;
     :hover{
-      background-color: rgb(247, 77, 96);
+      background-color: rgb(75,75,75);
     }
   }
 

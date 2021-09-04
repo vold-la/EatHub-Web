@@ -12,6 +12,10 @@ export const Wrapper = styled.div`
     font-weight: 500;
     color: rgb(105, 105, 105);
   }
+.btnbl{
+    color : black;
+    border : 1px solid black;
+}
   .order-id {
     overflow: hidden;
     white-space: nowrap;

@@ -26,9 +26,6 @@ function ProfileView() {
               <div className="photos" style={{ textAlign: "center" }}>
                 0<p>Photos</p>
               </div>
-              <div className="followers" style={{ textAlign: "center" }}>
-                0<p>Followers</p>
-              </div>
             </div>
           </div>
         </div>

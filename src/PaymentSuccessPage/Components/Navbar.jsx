@@ -233,9 +233,6 @@ function Navbar(props) {
                     </Link>
                     <div>Bookmarks</div>
                     <div>Reviews</div>
-                    <div>Network</div>
-                    <div>Find friends</div>
-                    <div>Settings</div>
                   </Card>
                 </Fade>
               </li>

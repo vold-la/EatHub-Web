@@ -11,7 +11,6 @@ import FormControl from '@material-ui/core/FormControl';
 import { grey } from '@material-ui/core/colors';
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
-import Grid from '@material-ui/core/Grid';
 import Slider from '@material-ui/core/Slider';
 import Button from '@material-ui/core/Button';
 import Backdrop from "@material-ui/core/Backdrop";
@@ -57,6 +56,7 @@ function a11yProps(index) {
     return {
         id: `vertical-tab-${index}`,
         "aria-controls": `vertical-tabpanel-${index}`,
+        color: 'rgb(120,200,120)',
     };
 }
 
@@ -73,7 +73,7 @@ const useStyles = makeStyles((theme) => ({
 
     },
     tabs: {
-        borderRight: `1px solid ${theme.palette.divider}`,
+        borderRight: `1px solid grey`,
         width: 150,
         minWidth: 150,
     },
@@ -120,7 +120,7 @@ const useStyles = makeStyles((theme) => ({
 
     divider: {
         height: 1,
-        color: " red",
+        color: "grey",
     },
     modalfooter: {
         float: "right",
@@ -549,8 +549,9 @@ export default function Filters(props) {
 
                                 <div >
                                     <div className={classes.root}>
-                                        <Tabs
+                                    <Tabs
                                             orientation="vertical"
+                                            TabIndicatorProps={{ style: { backgroundColor:"rgb(120,200,120)"}}}
                                             variant="scrollable"
                                             value={value}
                                             onChange={handleTabChange}
@@ -620,7 +621,7 @@ export default function Filters(props) {
                                             </div>
                                         </TabPanel>
                                         <TabPanel value={value} index={4}>
-                                            <p>More Filters</p>
+                                            <h4>More Filters</h4>
 
                                         </TabPanel>
                                         
@@ -634,7 +635,7 @@ export default function Filters(props) {
                         <div id="transition-modal-footer">
                             <div className={classes.modalfooter}>
                                 <Button onClick={clearFilter}>Clear all</Button>
-                                <Button onClick={applyFilter} variant="contained" color="Secondary">
+                                <Button onClick={applyFilter} variant="contained" style={{backgroundColor : '#000000' , color : 'white' }}>
                                     Apply
             </Button>
                             </div>

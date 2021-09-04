@@ -38,9 +38,9 @@ const Wrapper = styled.div`
     }
 
     div:nth-last-child(2) {
-      background-color: rgb(240, 236, 236);
+      background-color: rgb(236, 236, 236);
       :hover {
-        background-color: #f7d7da;
+        background-color: #cae6d5;
       }
     }
   }
@@ -109,8 +109,8 @@ function DishComponent(props) {
             </div>
           </div>
           <div className="ml-auto p-2 bd-highlight">
-            {dishCount >= 1 ? (
-              <div>
+             {dishCount >= 1 ? (
+                <div >
                 <div className="bd-highlight mb-3 customizeButton">
                   <div
                     style={{ color: "black" }}

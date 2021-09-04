@@ -58,9 +58,9 @@ const useStyles = makeStyles((theme) => ({
     },
 
     "& div:nth-last-child(2)": {
-      backgroundColor: "rgb(247, 235, 236)",
+        backgroundColor: "rgb(120,200,120)",
       "& :hover": {
-        backgroundColor: "#f7d7da",
+          backgroundColor: "rgb(120,200,120)",
       },
     },
   },
@@ -99,7 +99,7 @@ const ProceedAndContinueButton = styled.button`
   color: white;
   fontweight: 300;
   background-color: ${(props) =>
-    props.disabled ? `rgb(156, 156, 156)` : `rgb(237, 90, 107)`};
+    props.disabled ? `rgb(156, 156, 156)` : `rgb(0,0,0)`};
 `;
 
 const VerifyUserPhoneButton = styled.button`
@@ -110,7 +110,7 @@ const VerifyUserPhoneButton = styled.button`
   border-radius: 5px;
   color: white;
   background-color: ${(props) =>
-    props.disabled ? `rgb(156, 156, 156)` : `rgb(237, 90, 107)`};
+    props.disabled ? `rgb(156, 156, 156)` : `rgb(0,0,0)`};
 `;
 
 function LoginCheckout() {
@@ -192,7 +192,7 @@ function LoginCheckout() {
         }
       },
       theme: {
-        color: "#c6203d",
+        color: "#000000",
       },
     };
     const rzp1 = new window.Razorpay(options);
@@ -366,7 +366,7 @@ https://b.zmtcdn.com/web_assets/b69badeeb9ef00f59428b4c09ef4c1901575873261.png"
         </div>
         <div>DELIVERY AREA</div>
         <div className={classes.currentUserLocationDiv}>
-          <CheckCircleIcon style={{ color: " rgb(39, 129, 231)" }} />
+          <CheckCircleIcon style={{ color: " rgb(0,0,0)" }} />
           <div
             style={{
               flex: "1",
@@ -391,7 +391,7 @@ https://b.zmtcdn.com/web_assets/b69badeeb9ef00f59428b4c09ef4c1901575873261.png"
 
           <div
             style={{
-              color: "red",
+              color: "black",
               display: "inline-block",
             }}
           >
@@ -405,7 +405,7 @@ https://b.zmtcdn.com/web_assets/b69badeeb9ef00f59428b4c09ef4c1901575873261.png"
               float: "right",
               padding: "12px 32px",
               borderRadius: "5px",
-              backgroundColor: "rgb(237, 90, 107)",
+              backgroundColor: "rgb(0,0,0)",
               color: "white",
               fontWeight: 300,
             }}
@@ -435,7 +435,7 @@ https://b.zmtcdn.com/web_assets/b69badeeb9ef00f59428b4c09ef4c1901575873261.png"
         </div>
         <div>DELIVERY AREA</div>
         <div className={classes.currentUserLocationDiv}>
-          <CheckCircleIcon style={{ color: " rgb(39, 129, 231)" }} />
+          <CheckCircleIcon style={{ color: " rgb(0,0,0)" }} />
           <div
             style={{
               flex: "1",
@@ -453,13 +453,13 @@ https://b.zmtcdn.com/web_assets/b69badeeb9ef00f59428b4c09ef4c1901575873261.png"
                 textOverflow: "ellipsis",
               }}
             >
-              {locationSearchResults && locationSearchResults[0].place_name}
+              {locationSearchResults.length>0 && locationSearchResults[0].place_name}
             </div>
           </div>
 
           <div
             style={{
-              color: "red",
+              color: "black",
               display: "inline-block",
             }}
           >
@@ -671,14 +671,14 @@ https://b.zmtcdn.com/web_assets/b69badeeb9ef00f59428b4c09ef4c1901575873261.png"
                         <div style={{ display: "flex" }} className="mt-2 mb-3">
                           <button
                             name="login"
-                            className="btn btn-outline-danger loginBtn"
+                            className="btn btn-outline loginBtn"
                             onClick={handleNavigationClick}
                           >
                             Log in
                           </button>
                           <button
                             name="signup"
-                            className="btn btn-outline-danger signupBtn"
+                            className="btn btn-outline signupBtn"
                             onClick={handleNavigationClick}
                           >
                             Sign up
@@ -722,7 +722,7 @@ https://b.zmtcdn.com/web_assets/b69badeeb9ef00f59428b4c09ef4c1901575873261.png"
                             <div>
                               <CheckCircleIcon
                                 style={{
-                                  color: " rgb(39, 129, 231)",
+                                  color: " rgb(0,0,0)",
                                   marginRight: "10px",
                                 }}
                               />
@@ -771,7 +771,7 @@ https://b.zmtcdn.com/web_assets/b69badeeb9ef00f59428b4c09ef4c1901575873261.png"
                                 height: "70px",
                                 borderRadius: "5px",
                                 padding: "5px",
-                                backgroundColor: "#cae2fc",
+                                backgroundColor: "#cae6d5",
                                 cursor: "pointer",
                               }}
                             >
@@ -784,9 +784,7 @@ https://b.zmtcdn.com/web_assets/b69badeeb9ef00f59428b4c09ef4c1901575873261.png"
                                       style={{ width: "90px" }}
                                     />
                                   </div>
-                                  <CheckCircleIcon
-                                    style={{ color: " rgb(39, 129, 231)" }}
-                                  />
+                                  <CheckCircleIcon />
                                 </div>
                                 <div style={{ marginLeft: "5px" }}>
                                   Razorpay
@@ -818,7 +816,6 @@ https://b.zmtcdn.com/web_assets/b69badeeb9ef00f59428b4c09ef4c1901575873261.png"
                                       style={{ width: "90px" }}
                                     />
                                   </div>
-                                  <CheckCircleIcon />
                                 </div>
                                 <div style={{ marginLeft: "5px" }}>
                                   Razorpay
@@ -917,7 +914,7 @@ https://b.zmtcdn.com/web_assets/b69badeeb9ef00f59428b4c09ef4c1901575873261.png"
                             >
                               <div className={classes.customizeButton}>
                                 <div
-                                  style={{ color: "red", fontWeight: "300" }}
+                                  style={{ color: "black", fontWeight: "300" }}
                                   className="bd-highlight"
                                   onClick={() => {
                                     dispatch(
@@ -942,7 +939,7 @@ https://b.zmtcdn.com/web_assets/b69badeeb9ef00f59428b4c09ef4c1901575873261.png"
                                   {item.quantity}
                                 </div>
                                 <div
-                                  style={{ color: "red", fontWeight: "300" }}
+                                  style={{ color: "black", fontWeight: "300" }}
                                   className="bd-highlight"
                                   onClick={() => {
                                     dispatch(
@@ -974,15 +971,6 @@ https://b.zmtcdn.com/web_assets/b69badeeb9ef00f59428b4c09ef4c1901575873261.png"
                       className="bg-light pl-1"
                       style={{ listStyleType: "none" }}
                     >
-                      <div className="d-flex justify-content-between pl-2 pr-2 pt-2">
-                        <div>
-                          <h5 className="heading-text">Subtotal</h5>
-                        </div>
-                        <div>
-                          <p className="cost">₹{cartValue}</p>
-                        </div>
-                      </div>
-
                       <hr />
                       <div className="d-flex justify-content-between pl-2 pr-2">
                         <div>
@@ -997,8 +985,8 @@ https://b.zmtcdn.com/web_assets/b69badeeb9ef00f59428b4c09ef4c1901575873261.png"
                         className="text-danger"
                         style={{ fontSize: "13px", textAlign: "center" }}
                       >
-                        Order once placed cannot be cancelled and are
-                        non-refundable
+                        Order cannot be cancelled and are
+                        non-refundable. 
                       </p>
                       <hr />
 
@@ -1022,7 +1010,7 @@ https://b.zmtcdn.com/web_assets/b69badeeb9ef00f59428b4c09ef4c1901575873261.png"
                           className="shadow"
                           style={{
                             border: "none",
-                            backgroundColor: "rgb(237, 90, 107)",
+                            backgroundColor: "rgb(0,0,0)",
                             width: "280px",
                             borderRadius: "5px",
                             color: "white",
@@ -1043,7 +1031,7 @@ https://b.zmtcdn.com/web_assets/b69badeeb9ef00f59428b4c09ef4c1901575873261.png"
                           className="btn btn-secondary btn-lg btn-block"
                           style={{
                             border: "none",
-                            backgroundColor: "rgb(237, 90, 107)",
+                            backgroundColor: "rgb(0,0,0)",
                             width: "280px",
                             borderRadius: "5px",
                             color: "white",
