@@ -26,11 +26,11 @@ test upi payment -- success@razorpay (select upi option and paste this). <br />
   <tr>
     <td>Restaurant Page <img src="./pics/Restro_Page.png" height=300 ></td>
     <td>Collection Page <img src="./pics/Collection.png" height=250 ></td>
-    <td>Profile Update Page<img src="./pics/Restro_Image.png" height=250></td>
+    <td>Restaurant Images<img src="./pics/Restro_Image.png" height=250></td>
   <tr>
-   <td>Profile Update Page<img src="./pics/Online_Menu.png" height=300></td>
-     <td>Profile Update Page<img src="./pics/order.png" height=250></td>
-   <td>Profile Update Page<img src="./pics/payment.png" height=250></td>
+   <td>Online Food Menu<img src="./pics/Online_Menu.png" height=300></td>
+     <td>Checkout Page<img src="./pics/order.png" height=250></td>
+   <td>Payment Page<img src="./pics/payment.png" height=250></td>
   </tr>
 </table>
 
