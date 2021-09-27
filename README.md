@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# `Restaurant Product`
+(this is in active development)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+User can order food online , search for popular restaurants near with filters based on cuisines,rating etc , sort them based on popularity, cost etc. 
+Needs to `sign in` or `sign up` before checkout.
 
-In the project directory, you can run:
+Test Credentials : 
+use this to login, if you are concern about your privacy :)
 
-### `yarn start`
+email -- qwerty@gmail.com 
+otp -- 12345
+test upi payment -- success@razorpay (select upi option and paste this).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[Live Link] (https://eathub-web.herokuapp.com)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+#### Screenshots
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[Video Demo](https://drive.google.com/drive/folders/1dZaKBAjIGcfNY4KzM6MzZTvePWZ79kev?usp=sharing)
 
-### `yarn build`
+<table>
+   <tr align=center>
+     <td  colspan=3>Home Page <img src="./pics/Front_end.png" width=800 ></td>
+  </tr>
+  <tr>
+    <td>Restaurant Page <img src="./pics/Restro_Page.png" height=300 ></td>
+    <td>Collection Page <img src="./pics/Collection.png" height=250 ></td>
+    <td>Profile Update Page<img src="./pics/Restro_Image.png" height=250></td>
+  <tr>
+   <td>Profile Update Page<img src="./pics/Online_Menu.png" height=300></td>
+     <td>Profile Update Page<img src="./pics/order.png" height=250></td>
+   <td>Profile Update Page<img src="./pics/payment.png" height=250></td>
+  </tr>
+</table>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<hr/>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Built With
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<table  align=center>
+  <tr>
+   <td align=center> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png" height=100   ></td>
+    <td align=center> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/768px-Bootstrap_logo.svg.png"  height=100    ></td>
+    <td align=center> <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Redux.png"  height=100   ></td>
+	<td align=center> <img src="https://cdn.iconscout.com/icon/free/png-256/razorpay-1649771-1399875.png"  height=100  ></td>
+     <td align=center> <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--7f5GjxUW--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/c29t9uc8roz8g9rddbqs.png"  height=100  ></td>
+     
+  </tr>
 
-### `yarn eject`
+</table>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<hr/>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `Overview of Tech stack`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Google Maps & Mapbox  for geo coding
+- RazorPay  for Payment
+- Redux for managing state data between pages.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### `Installation and Setup Instructions`
 
-## Learn More
+-Clone down this repository. You will need `node` and `npm` installed globally on your machine.
+-Installation:`npm install`
+-To Run Test Suite:`npm test`
+-To Start Server: `npm start`
+-To Visit app locally: `localhost:3000/`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### `Deployement`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+deployement tool used: Heroku
 
-### Code Splitting
+### `Ongoing development`
+Dashboard for restaurant owner & onboard new restaurants.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## ðŸ¤ Contributing
 
-### Analyzing the Bundle Size
+Contributions & feedbacks are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Show your support
 
-### Making a Progressive Web App
+Give a â­ï¸ if you like this project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
