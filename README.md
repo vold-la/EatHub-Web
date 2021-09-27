@@ -5,14 +5,14 @@
 User can order food online , search for popular restaurants near with filters based on cuisines,rating etc , sort them based on popularity, cost etc. 
 Needs to `sign in` or `sign up` before checkout.
 
-Test Credentials : 
-use this to login, if you are concern about your privacy :)
+Test Credentials : <br /> 
+use this to login, if you are concern about your privacy :) <br />
 
-email -- qwerty@gmail.com 
-otp -- 12345
-test upi payment -- success@razorpay (select upi option and paste this).
+email -- qwerty@gmail.com <br />
+otp -- 12345 <br />
+test upi payment -- success@razorpay (select upi option and paste this). <br />
 
-[Live Link] (https://eathub-web.herokuapp.com)
+[Live Link](https://eathub-web.herokuapp.com)
 
 #### Screenshots
 
@@ -21,7 +21,7 @@ test upi payment -- success@razorpay (select upi option and paste this).
 
 <table>
    <tr align=center>
-     <td  colspan=3>Home Page <img src="./pics/Front_end.png" width=800 ></td>
+     <td  colspan=3>Home Page <img src="./pics/Front_Page.png" width=800 ></td>
   </tr>
   <tr>
     <td>Restaurant Page <img src="./pics/Restro_Page.png" height=300 ></td>
@@ -60,24 +60,27 @@ test upi payment -- success@razorpay (select upi option and paste this).
 
 ### `Installation and Setup Instructions`
 
--Clone down this repository. You will need `node` and `npm` installed globally on your machine.
--Installation:`npm install`
--To Run Test Suite:`npm test`
--To Start Server: `npm start`
--To Visit app locally: `localhost:3000/`
+- Clone down this repository. You will need `node` and `npm` installed globally on your machine.
+- Installation:`npm install`
+- To Run Test Suite:`npm test`
+- To Start Server: `npm start`
+- To Visit app locally: `localhost:3000/`
 
 ### `Deployement`
 
 deployement tool used: Heroku
 
+
 ### `Ongoing development`
 Dashboard for restaurant owner & onboard new restaurants.
 
-## ðŸ¤ Contributing
+
+##  Contributing
 
 Contributions & feedbacks are welcome!
 
+
 ## Show your support
 
-Give a â­ï¸ if you like this project!
+Give a star if you like this project!
 
