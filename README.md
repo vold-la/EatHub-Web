@@ -1,5 +1,6 @@
 # `Restaurant Product`
-(this is in active development)
+Note - this is in active development. <br />
+Note - Google button isn't working since I haven't got production Key. 
 
 
 User can order food online , search for popular restaurants near with filters based on cuisines,rating etc , sort them based on popularity, cost etc. 
@@ -75,12 +76,9 @@ deployement tool used: Heroku
 Dashboard for restaurant owner & onboard new restaurants.
 
 
-##  Contributing
-
-Contributions & feedbacks are welcome!
-
-
 ## Show your support
 
-Give a star if you like this project!
+Give a star if you like this project! <br />
+Contributions & feedbacks are welcome!
+
 
