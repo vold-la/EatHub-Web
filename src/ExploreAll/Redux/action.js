@@ -31,7 +31,7 @@ export const getFilterRestaurant = (filters, sort, city_id = 2) => {
     dispatch(restaurantFilterRequest());
     return axios({
       method: "post",
-        url: `${process.env.API}/api/restaurant/filterd`,
+        url: `${process.env.REACT_APP_BACKEND_URL}/api/restaurant/filterd`,
       headers: {
         "Content-Type": "application/json; charset=UTF-8",
       },

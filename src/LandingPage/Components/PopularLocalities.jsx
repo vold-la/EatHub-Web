@@ -15,7 +15,7 @@ function PopularLocalities() {
   useEffect(() => {
     axios({
       method: "post",
-        url: `${process.env.API}/api/search/localities`,
+        url: `${process.env.REACT_APP_BACKEND_URL}/api/search/localities`,
       data: {
         city_id: cityId,
       },

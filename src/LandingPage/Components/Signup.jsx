@@ -242,7 +242,7 @@ function LoginPage(props) {
     };
     axios({
       method: "post",
-        url: `${process.env.API}/api/auth/googleRegister`,
+        url: `${process.env.REACT_APP_BACKEND_URL}/api/auth/googleRegister`,
       data: payload,
     })
       .then((response) => {

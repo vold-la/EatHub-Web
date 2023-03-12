@@ -83,7 +83,7 @@ export default function ProfileBody() {
   const getActiveUserDetails = () => {
     Axios({
       method: "get",
-        url: `${process.env.API}/api/users/findById/${activeUserDetails.id}`,
+        url: `${process.env.REACT_APP_BACKEND_URL}/api/users/findById/${activeUserDetails.id}`,
     })
       .then((response) => setUserBackendDetails(response.data.user))
       .catch((error) => console.log(error));

@@ -31,7 +31,7 @@ export const getRestaurant = (payload) => {
     dispatch(restaurantFetchRequest());
     return axios({
       method: "get",
-        url: `${process.env.API}/api/restaurant/${payload}`,
+        url: `${process.env.REACT_APP_BACKEND_URL}/api/restaurant/${payload}`,
       headers: {
         "Content-Type": "application/json; charset=UTF-8",
       },

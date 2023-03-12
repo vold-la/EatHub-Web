@@ -31,7 +31,7 @@ export const getAllRestaurants = (cityId) => {
     dispatch(getAllRestaurantsRequest());
     return axios({
       method: "get",
-        url: `${process.env.API}/api/restaurant/all`,
+        url: `${process.env.REACT_APP_BACKEND_URL}/api/restaurant/all`,
       params: {
         city_id: cityId,
       },
