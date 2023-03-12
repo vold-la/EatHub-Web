@@ -31,7 +31,7 @@ export const getAllRestaurants = (cityId) => {
     dispatch(getAllRestaurantsRequest());
     return axios({
       method: "get",
-        url: "https://eathub-nbackend.herokuapp.com/api/restaurant/all",
+        url: `${process.env.API}/api/restaurant/all`,
       params: {
         city_id: cityId,
       },

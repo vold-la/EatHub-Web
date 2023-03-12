@@ -83,7 +83,7 @@ export default function ProfileBody() {
   const getActiveUserDetails = () => {
     Axios({
       method: "get",
-        url: `https://eathub-nbackend.herokuapp.com/api/users/findById/${activeUserDetails.id}`,
+        url: `${process.env.API}/api/users/findById/${activeUserDetails.id}`,
     })
       .then((response) => setUserBackendDetails(response.data.user))
       .catch((error) => console.log(error));

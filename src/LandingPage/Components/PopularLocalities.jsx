@@ -15,7 +15,7 @@ function PopularLocalities() {
   useEffect(() => {
     axios({
       method: "post",
-        url: "https://eathub-nbackend.herokuapp.com/api/search/localities",
+        url: `${process.env.API}/api/search/localities`,
       data: {
         city_id: cityId,
       },

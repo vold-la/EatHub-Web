@@ -317,7 +317,7 @@ export const queryRestaurant = (query, cityId) => {
     dispatch(queryRestaurantRequest());
     return axios({
       method: "get",
-        url: `https://eathub-nbackend.herokuapp.com/api/search/restaurant`,
+        url: `${process.env.API}/api/search/restaurant`,
       params: {
         q: query,
         city_id: cityId,
@@ -358,7 +358,7 @@ export const userSignup = (payload) => {
     dispatch(userSignupRequest());
     return axios({
       method: "post",
-        url: "https://eathub-nbackend.herokuapp.com/api/auth/register",
+        url: `${process.env.API}/api/auth/register`,
       data: payload,
     })
       .then((response) => {
@@ -375,7 +375,7 @@ export const userLogin = (email) => {
     dispatch(userLoginRequest());
     return axios({
       method: "post",
-        url: "https://eathub-nbackend.herokuapp.com/api/auth/login",
+        url: `${process.env.API}/api/auth/login`,
       data: { email: email },
     })
       .then((response) => {
@@ -393,7 +393,7 @@ export const userSignupVerify = (payload) => {
     dispatch(userSignupVerifyRequest());
     return axios({
       method: "post",
-        url: "https://eathub-nbackend.herokuapp.com/api/auth/verifyRegister",
+        url: `${process.env.API}/api/auth/verifyRegister`,
       data: payload,
     })
       .then((response) => {
@@ -410,7 +410,7 @@ export const userLoginVerify = (payload) => {
     dispatch(userLoginVerifyRequest());
     return axios({
       method: "post",
-        url: "https://eathub-nbackend.herokuapp.com/api/auth/verifyLogin",
+        url: `${process.env.API}/api/auth/verifyLogin`,
       data: payload,
     })
       .then((response) => {
@@ -427,7 +427,7 @@ export const userLoginGoogle = (email) => {
     dispatch(userLoginGoogleRequest());
     return axios({
       method: "post",
-        url: "https://eathub-nbackend.herokuapp.com/api/auth/googleLogin",
+        url: `${process.env.API}/api/auth/googleLogin`,
       data: { email: email },
     })
       .then((response) => {
@@ -451,7 +451,7 @@ export const getCityId = (payload) => {
     dispatch(getCityIdRequest());
     return axios({
       method: "post",
-        url: "https://eathub-nbackend.herokuapp.com/api/search/cityId",
+        url: `${process.env.API}/api/search/cityId`,
       data: payload,
       headers: {
         "Content-Type": "application/json; charset=UTF-8",
@@ -471,7 +471,7 @@ export const getCityCollection = (cityId) => {
     dispatch(getCityCollectionRequest());
     return axios({
       method: "post",
-        url: "https://eathub-nbackend.herokuapp.com/api/search/collection",
+        url: `${process.env.API}/api/search/collection`,
       data: { city_id: cityId },
     })
       .then((response) => {
@@ -488,7 +488,7 @@ export const getCityLocalities = (cityId) => {
     dispatch(getCityLocalitiesRequest());
     return axios({
       method: "post",
-        url: "https://eathub-nbackend.herokuapp.com/api/search/localities",
+        url: `${process.env.API}/api/search/localities`,
       data: { city_id: cityId },
     })
       .then((response) => {

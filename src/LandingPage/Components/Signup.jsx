@@ -242,7 +242,7 @@ function LoginPage(props) {
     };
     axios({
       method: "post",
-        url: "https://eathub-nbackend.herokuapp.com/api/auth/googleRegister",
+        url: `${process.env.API}/api/auth/googleRegister`,
       data: payload,
     })
       .then((response) => {

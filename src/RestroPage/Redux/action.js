@@ -31,7 +31,7 @@ export const getRestaurant = (payload) => {
     dispatch(restaurantFetchRequest());
     return axios({
       method: "get",
-        url: `https://eathub-nbackend.herokuapp.com/api/restaurant/${payload}`,
+        url: `${process.env.API}/api/restaurant/${payload}`,
       headers: {
         "Content-Type": "application/json; charset=UTF-8",
       },
