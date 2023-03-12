@@ -233,6 +233,7 @@ function LoginPage(props) {
   }, [otpVerification, timerValue]);
 
   const responseGoogle = (response) => {
+    if(!response.profileObj) return;
     let googleResponse = response.profileObj;
     let payload = {
       name: `${googleResponse.givenName} ${googleResponse.familyName}`,

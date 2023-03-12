@@ -217,6 +217,7 @@ function LoginPage(props) {
   };
 
   const responseGoogle = async (response) => {
+    if(!response.profileObj) return;
     let googleResponse = response.profileObj.email;
     let result = await userLoginGoogle(googleResponse);
     if (result.error === false) {

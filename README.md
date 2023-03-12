@@ -1,9 +1,10 @@
 # `Restaurant Product`
-Note - this is in active development. <br />
+Note - this was in active development. Archived because of bandwidth issue <br />
 Note - Google button isn't working since I haven't got production Key. 
 
 
-User can order food online , search for popular restaurants near with filters based on cuisines,rating etc , sort them based on popularity, cost etc. 
+User can order food online , search for popular restaurants near with filters based on cuisines,rating etc , sort them based on popularity, cost etc.
+Add restaurant was in dev status which can be found in footer
 Needs to `sign in` or `sign up` before checkout.
 
 Test Credentials : <br /> 
@@ -13,7 +14,7 @@ email -- qwerty@gmail.com <br />
 otp -- 12345 <br />
 test upi payment -- success@razorpay (select upi option and paste this). <br />
 
-[Live Link](https://eathub-rqbcj.ondigitalocean.app)
+[Live Link](https://eathub-bm288.ondigitalocean.app)
 
 #### Screenshots
 
