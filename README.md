@@ -13,7 +13,7 @@ email -- qwerty@gmail.com <br />
 otp -- 12345 <br />
 test upi payment -- success@razorpay (select upi option and paste this). <br />
 
-[Live Link](https://eathub-web.herokuapp.com)
+[Live Link](https://eathub-rqbcj.ondigitalocean.app)
 
 #### Screenshots
 
